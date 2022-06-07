@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @author Ihor Ambrosov <ihor.ambrosov@gmail.com>
+ * @license https://opensource.org/licenses/OSL-3.0
+ */
+-->
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <columns name="sales_order_columns">
+        <column name="sources" 
+                class="Ambros\Inventory\Ui\Sales\Component\Order\Listing\Column\Sources" 
+                component="Ambros_Inventory/js/sales/order/grid/columns/sources">
+            <settings>
+                <options class="Ambros\Inventory\Data\Inventory\OptionSource\Source"/>
+                <filter>false</filter>
+                <label translate="true">Sources</label>
+                <sortable>false</sortable>
+            </settings>
+        </column>
+    </columns>
+</listing>

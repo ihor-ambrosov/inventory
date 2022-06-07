@@ -1,0 +1,26 @@
+{
+    "name": "ambros/module-inventory-common",
+    "description": "N/A",
+    "require": {
+        "magento/framework": "102.0.* | 103.0.*",
+        "ambros/module-common": "102.4.*",
+        "magento/module-catalog": "103.0.* | 104.0.*",
+        "magento/module-inventory": "1.0.* | 1.1.* | 1.2.*",
+        "magento/module-inventory-api": "1.0.* | 1.1.* | 1.2.*",
+        "magento/module-inventory-catalog-api": "1.1.* | 1.0.* | 1.2.* | 1.3.*",
+        "magento/module-inventory-import-export": "1.0.* | 1.1.* | 1.2.*"
+    },
+    "type": "magento2-module",
+    "version": "1.0.2",
+    "license": [
+        "OSL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ambros\\InventoryCommon\\": ""
+        }
+    }
+}

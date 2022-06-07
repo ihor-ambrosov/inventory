@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Ihor Ambrosov <ihor.ambrosov@gmail.com>
+ * @license https://opensource.org/licenses/OSL-3.0
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Ambros\InventoryCommon\Api\CurrentSourceProviderInterface" type="Ambros\InventoryCommon\Model\CurrentSourceProvider"/>
+    <preference for="Ambros\InventoryCommon\Api\CurrentStockProviderInterface" type="Ambros\InventoryCommon\Model\CurrentStockProvider"/>
+    <preference for="Ambros\InventoryCommon\Api\Data\SourceItemOptionInterface" type="Ambros\InventoryCommon\Model\SourceItem\Option"/>
+    <preference for="Ambros\InventoryCommon\Api\SourceItem\Option\GetInterface" type="Ambros\InventoryCommon\Model\SourceItem\Option\Get"/>
+    <preference for="Ambros\InventoryCommon\Api\SourceItem\Option\SaveInterface" type="Ambros\InventoryCommon\Model\SourceItem\Option\Save"/>
+    <preference for="Ambros\InventoryCommon\Api\SourceItem\Option\DeleteInterface" type="Ambros\InventoryCommon\Model\SourceItem\Option\Delete"/>
+    <preference for="Ambros\InventoryCommon\Api\GetDefaultStockInterface" type="Ambros\InventoryCommon\Model\GetDefaultStock"/>
+    <preference for="Ambros\InventoryCommon\Api\GetStockByStoreInterface" type="Ambros\InventoryCommon\Model\GetStockByStore"/>
+    <preference for="Ambros\InventoryCommon\Api\GetStockIdByStoreInterface" type="Ambros\InventoryCommon\Model\GetStockIdByStore"/>
+</config>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Ihor Ambrosov <ihor.ambrosov@gmail.com>
+ * @license https://opensource.org/licenses/OSL-3.0
+ */
+-->
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/layout_generic.xsd">
+    <body>
+        <referenceBlock name="product.composite.fieldset">
+            <block class="Ambros\Inventory\Block\Catalog\Adminhtml\Product\Composite\Fieldset\Source" name="product.composite.fieldset.source" template="Ambros_Inventory::catalog/product/composite/fieldset/source.phtml"/>
+        </referenceBlock>
+    </body>
+</layout>

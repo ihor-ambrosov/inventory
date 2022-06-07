@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Ihor Ambrosov <ihor.ambrosov@gmail.com>
+ * @license https://opensource.org/licenses/OSL-3.0
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="product.info.options.wrapper.bottom">
+            <action method="unsetChild">
+                <argument name="block" xsi:type="string">product.info.source</argument>
+            </action>
+        </referenceBlock>
+        <referenceBlock name="bundle.summary">
+            <block class="Ambros\Inventory\Block\Catalog\Product\View\Source" name="product.info.source" before="product.info.addtocart.bundle" template="Ambros_Inventory::catalog/product/view/source.phtml"/>
+        </referenceBlock>
+    </body>
+</page>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Ihor Ambrosov <ihor.ambrosov@gmail.com>
+ * @license https://opensource.org/licenses/OSL-3.0
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="paypal.express.review" template="Ambros_Inventory::paypal/express/review.phtml">
+            <arguments>
+                <argument name="wrapper" xsi:type="object">Ambros\Inventory\Wrapper\Block\Paypal\Express\Review</argument>
+            </arguments>
+            <referenceBlock name="express.review.shipping.method" template="Ambros_Inventory::paypal/express/review/shipping/method.phtml">
+                <arguments>
+                    <argument name="wrapper" xsi:type="object">Ambros\Inventory\Wrapper\Block\Paypal\Express\Review</argument>
+                </arguments>
+            </referenceBlock>
+        </referenceBlock>
+    </body>
+</page>
